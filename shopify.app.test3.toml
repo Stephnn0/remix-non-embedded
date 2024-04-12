@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "69facf36176da7e2e6959a70a228081d"
+name = "test3"
+handle = "test3-244"
+application_url = "https://alaska-deutschland-guarantee-violin.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "store-chec.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://alaska-deutschland-guarantee-violin.trycloudflare.com/auth/callback",
+  "https://alaska-deutschland-guarantee-violin.trycloudflare.com/auth/shopify/callback",
+  "https://alaska-deutschland-guarantee-violin.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false

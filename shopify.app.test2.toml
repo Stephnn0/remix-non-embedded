@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "5e1586346231acc7e2bbd9b821cc331f"
+name = "test2"
+handle = "test2-909"
+application_url = "https://revision-steven-uv-chemical.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "store-chec.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = ""
+
+[auth]
+redirect_urls = [
+  "https://revision-steven-uv-chemical.trycloudflare.com/auth/callback",
+  "https://revision-steven-uv-chemical.trycloudflare.com/auth/shopify/callback",
+  "https://revision-steven-uv-chemical.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
